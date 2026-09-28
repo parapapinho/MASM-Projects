@@ -1,6 +1,6 @@
-# XM Music: RadASM to MASM64
+# XM Music: RadASM(MASM32) to MASM64
 
-This package preserves original RadASM example and adds a Windows x64 port written for **Microsoft ML64**.
+This package preserves original RadASM(MASM32) example and adds a Windows x64 port written for **Microsoft ML64**.
 
 - `original/`: the extracted original project, unchanged.
 - `masm64/`: the new application, library source, build script and Easy Code project.
