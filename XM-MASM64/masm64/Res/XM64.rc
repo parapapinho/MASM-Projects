@@ -1,0 +1,18 @@
+#include <windows.h>
+
+400 RCDATA "Res/yul.xm"
+
+101 DIALOGEX 0, 0, 280, 115
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "XM Music - MASM64"
+FONT 9, "Segoe UI"
+BEGIN
+    LTEXT "Everdoh's XM music example", -1, 12, 10, 250, 12
+    LTEXT "Loading embedded XM...", 1000, 12, 29, 255, 15
+    PUSHBUTTON "Play / Restart", 1001, 12, 53, 80, 18
+    PUSHBUTTON "Pause", 1002, 100, 53, 80, 18
+    PUSHBUTTON "Resume", 1003, 188, 53, 80, 18
+    PUSHBUTTON "Stop", 1004, 12, 82, 80, 18
+    PUSHBUTTON "About", 1005, 100, 82, 80, 18
+    DEFPUSHBUTTON "Close", IDCANCEL, 188, 82, 80, 18
+END
