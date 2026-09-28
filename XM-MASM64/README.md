@@ -84,10 +84,6 @@ Handles and pointers use 64-bit storage. BASS music handles remain DWORDs, as sp
 
 The XM is read directly from RCDATA. The extra allocation, length prefix and memory copy from the original are unnecessary with this backend. Closing the dialog releases audio resources before the process exits.
 
-## Validation status
-
-Both assembly sources assembled to AMD64 COFF with **UASM 2.57**, with zero warnings/errors. The library also passed an executable test harness using the Microsoft x64 ABI and simulated BASS/Win32 functions. This checks argument widths, stack arguments, state transitions, resource loading and cleanup/error paths.
-
 ## Third-party components
 
 The BASS x64 DLL and import library were taken from the official Windows package at <https://www.un4seen.com/files/bass24.zip>. The original `bass.txt` is included unchanged under `masm64/third_party/bass`. BASS retains its own licensing terms; it is not part of an independently implemented decoder.
