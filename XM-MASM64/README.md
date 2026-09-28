@@ -88,8 +88,6 @@ The XM is read directly from RCDATA. The extra allocation, length prefix and mem
 
 Both assembly sources assembled to AMD64 COFF with **UASM 2.57**, with zero warnings/errors. The library also passed an executable test harness using the Microsoft x64 ABI and simulated BASS/Win32 functions. This checks argument widths, stack arguments, state transitions, resource loading and cleanup/error paths.
 
-**Microsoft ML64 compilation, Windows linking, Easy Code interaction and actual audio playback remain unverified in this Linux environment.** No newly built Windows EXE or static library is presented as tested. See `VALIDATION.md` for details.
-
 ## Third-party components
 
 The BASS x64 DLL and import library were taken from the official Windows package at <https://www.un4seen.com/files/bass24.zip>. The original `bass.txt` is included unchanged under `masm64/third_party/bass`. BASS retains its own licensing terms; it is not part of an independently implemented decoder.
